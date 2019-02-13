@@ -187,11 +187,11 @@ video{
   transition: 0.4s;
   transform: rotate(45deg);
   position: relative;
-  width: 3vw;
-  height: 3vw;
+  width: 2vw;
+  height: 2vw;
   background-color: rgb(255,175,7);
   margin-top: 15.165vw;
-  left: -1.5vw;
+  left: -1vw;
 }
 .arrow:hover{
   filter: brightness(120%);
