@@ -458,9 +458,11 @@ main{
   width: 100%;
 }
 .recentWorkImages{
+  transition: 1s;
   width: 100%;
   height:100%;
 }
+
 
 .imgBox{
   position: relative;
@@ -523,7 +525,6 @@ main{
   height: 100vh;
   overflow: hidden;
 }
-
 
 .gridImgBox:hover{
   cursor: pointer;

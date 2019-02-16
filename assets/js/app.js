@@ -319,3 +319,50 @@ yellowLineAnimBox.addEventListener('click',function(){
   discoverySection.scrollIntoView({behavior: "smooth"});
   console.log('aaa');
 })
+
+// recent project hover
+// recent project hover
+// recent project hover
+var imgBox = document.getElementsByClassName('imgBox');
+var recentWorkImages = document.getElementsByClassName('recentWorkImages');
+imgBox[0].addEventListener('mouseenter',()=>{
+  recentWorkImages[0].style.height = '95%';
+  recentWorkImages[0].style.width = '95%';
+  recentWorkImages[0].style.marginTop = '1.25%';
+  recentWorkImages[0].style.marginLeft = '2.5%';
+});
+
+imgBox[0].addEventListener('mouseleave',()=>{
+  recentWorkImages[0].style.height = '100%';
+  recentWorkImages[0].style.width = '100%';
+  recentWorkImages[0].style.marginTop = '0%';
+  recentWorkImages[0].style.marginLeft = '0%';
+});
+
+imgBox[1].addEventListener('mouseenter',()=>{
+  recentWorkImages[1].style.height = '95%';
+  recentWorkImages[1].style.width = '95%';
+  recentWorkImages[1].style.marginTop = '1.25%';
+  recentWorkImages[1].style.marginLeft = '2.5%';
+});
+
+imgBox[1].addEventListener('mouseleave',()=>{
+  recentWorkImages[1].style.height = '100%';
+  recentWorkImages[1].style.width = '100%';
+  recentWorkImages[1].style.marginTop = '0%';
+  recentWorkImages[1].style.marginLeft = '0%';
+});
+
+imgBox[2].addEventListener('mouseenter',()=>{
+  recentWorkImages[2].style.height = '95%';
+  recentWorkImages[2].style.width = '95%';
+  recentWorkImages[2].style.marginTop = '1.25%';
+  recentWorkImages[2].style.marginLeft = '2.5%';
+});
+
+imgBox[2].addEventListener('mouseleave',()=>{
+  recentWorkImages[2].style.height = '100%';
+  recentWorkImages[2].style.width = '100%';
+  recentWorkImages[2].style.marginTop = '0%';
+  recentWorkImages[2].style.marginLeft = '0%';
+});
