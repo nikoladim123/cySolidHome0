@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'Montserrat-Hairline';
+  font-display: auto;
+  src: url('../fonts/Montserrat-Hairline.otf') format('truetype');
+}
+@font-face {
   font-family: 'Montserrat-ExtraLight';
   font-display: auto;
   src: url('../fonts/Montserrat-ExtraLight.otf') format('truetype');
@@ -136,7 +141,7 @@ header{
   background-size: 100% 100%;
   position: relative;
   min-height: 97.77vw;
-  background: linear-gradient(135deg, rgba(225,165,14,1) 0%, rgba(237,211,125,1) 100%);
+  background: linear-gradient(135deg, rgba(245,211,88,1) 0%, rgba(248,176,17,1) 100%);
 }
 
 .videoDiv{
@@ -148,7 +153,8 @@ header{
   height: 36.6vw;
   width: 88.579vw;
   /* border: 1.85vw solid rgb(255,255,255,0.4); */
-  box-shadow: 0px 4.44vw 11.11vw -2.59vw rgba(0,0,0,0.55);
+  /* box-shadow: 0px 4.44vw 11.11vw -2.59vw rgba(0,0,0,0.55); */
+  box-shadow:0px 5.44vw 11.11vw -5.59vw rgba(0,0,0,0.55);
 }
 video{
   object-fit: initial;
@@ -235,7 +241,6 @@ video{
 }
 
 .mobileVid{
-  z-index: 5;
   background-image: url('../img/mobileVid.png');
   width: 45.407vw;
   height: 70vw;
@@ -248,7 +253,7 @@ video{
   overflow: hidden;
   border-radius: 0.5vw;
   position: relative;
-  width: 28.55vw;
+  width: 28.65vw;
   height: 50vw;
   top: 7.7vw;
   left: 7.5vw;
@@ -430,7 +435,7 @@ main{
   height: 200vw;
   width: 56vw;
   position: absolute;
-  background-color: rgb(209,210,212);
+  background-color: rgb(228,226,226);
   transform: rotate(18deg);
   top: -15vw;
   left: -36vw;
@@ -441,7 +446,7 @@ main{
   top: 0;
   width: 10vw;
   height: 100%;
-  background-color: rgb(209,210,212);
+  background-color: rgb(228,226,226);
 }
 
 .animatedHeading{
@@ -455,7 +460,7 @@ main{
 
 .webDevelopment{
   margin-top: 34.15vw;
-  margin-left: 5.5vw;
+  margin-left: 8vw;
   position: relative;
 }
 .webDevelopment p{
@@ -465,7 +470,7 @@ main{
 }
 .webDevelopment p:nth-child(2){
   margin-bottom: -1.2vw;
-  font-family: 'Montserrat-ExtraLight',serif;
+  font-family: 'Montserrat-Hairline',serif;
 }
 .webDevelopment p:nth-child(3){
   font-family: 'Montserrat-Black',serif;
@@ -485,6 +490,7 @@ main{
   /* margin-bottom: 5vw; */
 }
 .rectWorkImageBox{
+  border-top: 2.814vw solid white;
   display: flex;
   width: 100%;
 }
@@ -540,8 +546,8 @@ main{
 .whatWeDoHtwo{
   font-family: 'Montserrat-Light';
   text-align: center;
-  margin-top: 22.6vw;
-  margin-bottom: 22.6vw;
+  margin-top: 16.6vw;
+  margin-bottom: 16.6vw;
 }
 
 .fourImgGrid{
@@ -549,12 +555,21 @@ main{
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  height: 200vh;
   /* grid-gap: 5px; */
 }
 .fourImgGrid>div{
   position: relative;
   height: 100vh;
   overflow: hidden;
+}
+
+.gridImgBox{
+  transition: 1s;
+  margin-top: 0;
+  margin-left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .gridImgBox:hover{
@@ -601,13 +616,13 @@ main{
   margin: 0;
   font-family: 'Montserrat-Light';
   color: white;
-  font-size: 5.5vw;
+  font-size: 5.2vw;
 }
 .gridParaBox p:nth-child(2){
   margin: 0;
   font-family: 'Montserrat-Black';
   color: white;
-  font-size: 5.5vw;
+  font-size: 5.2vw;
 }
 
 .gridImgOne,
@@ -622,7 +637,7 @@ main{
   margin-left: 0%;
 }
 
-.gridImgOne:hover,
+/* .gridImgOne:hover,
 .gridImgTwo:hover,
 .gridImgThree:hover,
 .gridImgFour:hover{
@@ -630,7 +645,7 @@ main{
   height: 95%;
   margin-top: 2.5%;
   margin-left: 2.5%;
-}
+} */
 
 /* workflow */
 .workFlow{
@@ -643,17 +658,18 @@ main{
   justify-content: center;
 }
 .workFlow p{
+  text-align: center;
   margin: 0;
 }
 .workFlow p:nth-child(1){
-  font-size: 10.729vw;
-  font-family: 'Montserrat-ExtraLight';
+  font-size: 10vw;
+  font-family: 'Montserrat-Hairline';
 }
-.workFlow p:nth-child(2){
-  font-size: 10.729vw;
+.workFlow span{
+  font-size: 10vw;
   font-family: 'Montserrat-Black';
 }
-.workFlow p:nth-child(3){
+.workFlow p:nth-child(2){
   font-size: 3.177vw;
   font-family: 'Montserrat-ExtraLight';
 }
@@ -674,6 +690,7 @@ main{
   /* animation-direction: alternate; */
   animation-iteration-count: infinite;
 }
+
 @keyframes yellowLineDown {
   0%{
     height: 1vw;
@@ -710,7 +727,7 @@ main{
   font-family: 'Montserrat-Black';
 }
 .yellowLineAnimBoxTwo{
-  height: 7vw;
+  height: 17vw;
   width: 1vw;
   padding-left: 1vw;
 }

@@ -366,3 +366,67 @@ imgBox[2].addEventListener('mouseleave',()=>{
   recentWorkImages[2].style.marginTop = '0%';
   recentWorkImages[2].style.marginLeft = '0%';
 });
+// 4image grid hover
+// 4image grid hover
+// 4image grid hover
+var gridImgBox = document.getElementsByClassName('gridImgBox');
+var gridParaFont = document.getElementsByClassName('gridParaFont');
+var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
+  gridImgBox[0].addEventListener('mouseenter',function(){
+      gridImgBox[0].style.width = '95%';
+      gridImgBox[0].style.height = '95%';
+      gridImgBox[0].style.marginTop = '2.5%';
+      gridImgBox[0].style.marginLeft = '2.5%';
+    });
+
+  gridImgBox[0].addEventListener('mouseleave',function(){
+      gridImgBox[0].style.width = '100%';
+      gridImgBox[0].style.height = '100%';
+      gridImgBox[0].style.marginTop = '0%';
+      gridImgBox[0].style.marginLeft = '0%';
+    });
+
+
+    gridImgBox[1].addEventListener('mouseenter',function(){
+        gridImgBox[1].style.width = '95%';
+        gridImgBox[1].style.height = '95%';
+        gridImgBox[1].style.marginTop = '2.5%';
+        gridImgBox[1].style.marginLeft = '2.5%';
+      });
+
+    gridImgBox[1].addEventListener('mouseleave',function(){
+        gridImgBox[1].style.width = '100%';
+        gridImgBox[1].style.height = '100%';
+        gridImgBox[1].style.marginTop = '0%';
+        gridImgBox[1].style.marginLeft = '0%';
+      });
+
+
+      gridImgBox[2].addEventListener('mouseenter',function(){
+          gridImgBox[2].style.width = '95%';
+          gridImgBox[2].style.height = '95%';
+          gridImgBox[2].style.marginTop = '2.5%';
+          gridImgBox[2].style.marginLeft = '2.5%';
+        });
+
+      gridImgBox[2].addEventListener('mouseleave',function(){
+          gridImgBox[2].style.width = '100%';
+          gridImgBox[2].style.height = '100%';
+          gridImgBox[2].style.marginTop = '0%';
+          gridImgBox[2].style.marginLeft = '0%';
+        });
+
+
+        gridImgBox[3].addEventListener('mouseenter',function(){
+            gridImgBox[3].style.width = '95%';
+            gridImgBox[3].style.height = '95%';
+            gridImgBox[3].style.marginTop = '2.5%';
+            gridImgBox[3].style.marginLeft = '2.5%';
+          });
+
+        gridImgBox[3].addEventListener('mouseleave',function(){
+            gridImgBox[3].style.width = '100%';
+            gridImgBox[3].style.height = '100%';
+            gridImgBox[3].style.marginTop = '0%';
+            gridImgBox[3].style.marginLeft = '0%';
+          });
