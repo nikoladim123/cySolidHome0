@@ -55,18 +55,18 @@ arrow.addEventListener('click',function(){
 var burgerMenu = document.getElementsByClassName('burgerMenu')[0];
 var burgerLine = document.getElementsByClassName('burgerLine');
 burgerMenu.addEventListener('mouseenter',()=>{
-  burgerLine[0].style.left = '-0.5vw';
-  burgerLine[1].style.left = '0.5vw';
-  burgerLine[2].style.left = '-0.5vw';
+  burgerLine[0].style.left = '0';
+  burgerLine[1].style.left = '0';
+  burgerLine[2].style.left = '0';
   burgerLine[0].style.backgroundColor = 'rgb(253,216,47)';
   burgerLine[1].style.backgroundColor = 'rgb(253,216,47)';
   burgerLine[2].style.backgroundColor = 'rgb(253,216,47)';
 });
 
 burgerMenu.addEventListener('mouseleave',()=>{
-  burgerLine[0].style.left = '0vw';
+  burgerLine[0].style.left = '42%';
   burgerLine[1].style.left = '0vw';
-  burgerLine[2].style.left = '0vw';
+  burgerLine[2].style.left = '25%';
   burgerLine[0].style.backgroundColor = 'white';
   burgerLine[1].style.backgroundColor = 'white';
   burgerLine[2].style.backgroundColor = 'white';

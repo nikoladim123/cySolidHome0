@@ -296,6 +296,13 @@ video{
   text-decoration:none;
   padding: 5px 10px;
 }
+#searchID{
+  font-size: 3vw;
+  margin: 0;
+  position: relative;
+  top: -1.4vw;
+  margin-right: 2vw;
+}
 .links a:hover{
   color: rgb(253,216,47);
 }
@@ -318,7 +325,14 @@ video{
   width: 100%;
   margin-bottom: 0.6vw;
 }
-
+.burgerLine:nth-child(1){
+  width: 58%;
+  left: 42%;
+}
+.burgerLine:nth-child(3){
+  width: 75%;
+  left: 25%;
+}
 .zero,.three{
   position: relative;
 }
@@ -393,7 +407,7 @@ video{
 .homeDesign a:hover{
   text-decoration: underline;
 }
-.searchIcon{
+/* .searchIcon{
   z-index: 1;
   transition: 0.5s;
   position: relative;
@@ -410,7 +424,7 @@ video{
 .searchIcon:hover{
   cursor: pointer;
   opacity: 1;
-}
+} */
 /* main */
 main{
   padding-top: 0.1px;
