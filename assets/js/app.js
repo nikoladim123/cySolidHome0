@@ -1,10 +1,15 @@
+// window.onscroll = function(){
+//   // console.log(appMenu.getBoundingClientRect().top);
+//   // appMenuSticky();
+//   if(scrollY >100){
+//     // imageReveal();
+//     // textReveal();
+//     // optimizationSectionReveal();
+//   }
+// }
 window.onscroll = function(){
-  // console.log(appMenu.getBoundingClientRect().top);
-  // appMenuSticky();
-  if(scrollY >100){
-    // imageReveal();
-    // textReveal();
-    // optimizationSectionReveal();
+	if (document.getElementsByTagName('main')[0].getBoundingClientRect().y - window.innerHeight > 0) {
+    document.getElementsByClassName("mobileVid")[0].style.bottom = parseInt(window.getComputedStyle(document.getElementsByClassName("mobileVid")[0]).bottom) - window.scrollY/120 + 'px';
   }
 }
 
