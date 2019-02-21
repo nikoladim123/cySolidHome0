@@ -7,16 +7,31 @@
 //     // optimizationSectionReveal();
 //   }
 // }
+
 window.onscroll = function(){
-	if (document.getElementsByTagName('main')[0].getBoundingClientRect().y - window.innerHeight > 0) {
-    document.getElementsByClassName("mobileVid")[0].style.bottom = parseInt(window.getComputedStyle(document.getElementsByClassName("mobileVid")[0]).bottom) - window.scrollY/120 + 'px';
-  }
+	mobVidCall();
+	mobParrotCall();
 }
+
 
 window.onload = function(){
   // revealOnLoad();
 }
-
+// mobile paralax anim
+// mobile paralax anim
+// mobile paralax anim
+var mobileVid = document.getElementsByClassName("mobileVid")[0];
+function mobVidCall(){
+	if (parseInt(window.getComputedStyle(mobileVid).bottom) > -(window.innerWidth/100 *36) ) {
+    mobileVid.style.bottom = parseInt(window.getComputedStyle(mobileVid).bottom) - window.scrollY/140 + 'px';
+  }
+}
+var mobileParrot = document.getElementsByClassName("mobileParrot")[0];
+function	mobParrotCall(){
+	if (parseInt(window.getComputedStyle(mobileParrot).bottom) > -(window.innerWidth/100 *18) ) {
+    mobileParrot.style.bottom = parseInt(window.getComputedStyle(mobileParrot).bottom) - window.scrollY/200 + 'px';
+  }
+}
 // video slider anim
 // video slider anim
 // video slider anim

@@ -236,7 +236,7 @@ video{
   width: 32.29vw;
   height: 57.85vw;
   position: absolute;
-  bottom: -18vw;
+  bottom: -8vw;
   left: 17vw;
 }
 
@@ -247,7 +247,7 @@ video{
   background-size: 100% 100%;
   position: absolute;
   right: 6.5vw;
-  bottom: -26vw;
+  bottom: -20vw;
 }
 .mobileVideoDiv{
   overflow: hidden;
