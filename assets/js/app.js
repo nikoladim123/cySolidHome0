@@ -17,6 +17,32 @@ window.onscroll = function(){
 window.onload = function(){
   // revealOnLoad();
 }
+
+// videoText anim Chnage text on time interval
+// videoText anim Chnage text on time interval
+// videoText anim Chnage text on time interval
+var animQuot = document.getElementsByClassName('animQuot');
+var quot = 0;
+setInterval(function () {
+	if(quot%2 === 0 ){
+		animQuot[0].style.opacity = '0';
+		setTimeout(function(){
+			// animQuot[0].style.display = 'none';
+			animQuot[1].style.display = 'block';
+			animQuot[1].style.opacity = '1';
+		},1000)
+	}
+	if(quot%2 === 1 ){
+		animQuot[1].style.opacity = '0';
+		setTimeout(function(){
+			// animQuot[1].style.display = 'none';
+			animQuot[0].style.display = 'block';
+			animQuot[0].style.opacity = '1';
+		},1000)
+	}
+	quot++;
+}, 5000);
+
 // mobile paralax anim
 // mobile paralax anim
 // mobile paralax anim
@@ -71,6 +97,7 @@ burgerMenu.addEventListener('mouseleave',()=>{
   burgerLine[1].style.backgroundColor = 'white';
   burgerLine[2].style.backgroundColor = 'white';
 });
+
 // .appMenu STICKY ON / OFF
 // .appMenu STICKY ON / OFF
 // .appMenu STICKY ON / OFF
