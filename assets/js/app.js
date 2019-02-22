@@ -356,16 +356,6 @@ exitButton.addEventListener('click',function(){
    }, 1000);
 })
 
-// yellow line on click
-// yellow line on click
-// yellow line on click
-var yellowLineAnimBox = document.getElementsByClassName('yellowLineAnimBox')[0];
-var discoverySection = document.getElementsByClassName('discoverySection')[0];
-
-yellowLineAnimBox.addEventListener('click',function(){
-  discoverySection.scrollIntoView({behavior: "smooth"});
-  console.log('aaa');
-})
 
 // recent project hover
 // recent project hover

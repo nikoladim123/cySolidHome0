@@ -156,7 +156,7 @@ header{
   /* box-shadow: 0px 4.44vw 11.11vw -2.59vw rgba(0,0,0,0.55); */
   box-shadow:0px 9.44vw 10vw -5.59vw rgba(0,0,0,0.55);
 }
-video{
+.videoDiv video{
   object-fit: initial;
   position: absolute;
   /* top: 0; */
@@ -226,7 +226,7 @@ video{
   font-size: 1.317vw;
   margin-left: 50%;
   left: -6.445vw;
-  bottom: 1vw;
+  bottom: 2.2vw;
 }
 .bannerAnimArrow{
   position: absolute;
@@ -476,14 +476,14 @@ main{
   /* border: 1px solid red; */
   width: 100%;
   overflow:hidden;
-  height: 100%
+  height: 50vw;
 }
 .narrowBG{
   box-shadow: 1.7vw 7px 50px -30px rgba(0,0,0,0.75);
   height: 200vw;
   width: 56vw;
   position: absolute;
-  background-color: rgb(228,226,226);
+  background-color: #e4e2e2;
   transform: rotate(18deg);
   top: -15vw;
   left: -36vw;
@@ -494,7 +494,7 @@ main{
   top: 0;
   width: 10vw;
   height: 100%;
-  background-color: rgb(228,226,226);
+  background-color: #e4e2e2;
 }
 
 .animatedHeading{
@@ -594,8 +594,9 @@ main{
 .whatWeDoHtwo{
   font-family: 'Montserrat-Light';
   text-align: center;
-  margin-top: 16.6vw;
-  margin-bottom: 16.6vw;
+  margin-top: 14vw;
+  margin-bottom: 3.5vw;
+  font-size: 2.5vw;
 }
 
 .fourImgGrid{
@@ -664,13 +665,13 @@ main{
   margin: 0;
   font-family: 'Montserrat-Light';
   color: white;
-  font-size: 5.2vw;
+  font-size: 4.7vw;
 }
 .gridParaBox p:nth-child(2){
   margin: 0;
   font-family: 'Montserrat-Black';
   color: white;
-  font-size: 5.2vw;
+  font-size: 4.7vw;
 }
 
 .gridImgOne,
@@ -685,107 +686,143 @@ main{
   margin-left: 0%;
 }
 
-/* .gridImgOne:hover,
-.gridImgTwo:hover,
-.gridImgThree:hover,
-.gridImgFour:hover{
-  width: 95%;
-  height: 95%;
-  margin-top: 2.5%;
-  margin-left: 2.5%;
-} */
-
-/* workflow */
-.workFlow{
-  width: 100%;
-  height: 100vh;
-  /* background: rgb(0,0,0,0.5); */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* supportAndMaintance */
+.supportAndMaintance{
+  margin-top: 0.741vw;
+  position: relative;
+  height: 44.3vw;
+  /* background: radial-gradient(ellipse at center, rgba(228,229,227,1) 0%, rgba(160,201,150,1) 100%); */
+  background: radial-gradient(ellipse at center, rgba(228,229,227,1) 0%, rgba(160,201,150,1) 91%, rgba(160,201,150,1) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 250%;
 }
-.workFlow p{
-  text-align: center;
+.supMain{
+  border: 1px solid red;
+  position: absolute;
+  right: 6.89vw;
+  top: 4.2vw;
+  /* width: auto; */
+  height: auto;
+}
+.supMain h2{
   margin: 0;
-}
-.workFlow p:nth-child(1){
-  font-size: 10vw;
+  margin-top: 1vw;
+  font-size: 5.8vw;
   font-family: 'Montserrat-Hairline';
+  font-weight: 100;
 }
-.workFlow span{
-  font-size: 10vw;
+.supMain h2 span{
   font-family: 'Montserrat-Black';
-}
-.workFlow p:nth-child(2){
-  font-size: 3.177vw;
-  font-family: 'Montserrat-ExtraLight';
-}
-.yellowLineAnimBox{
-  width: 1vw;
-  height: 7vw;
-  padding-left: 1vw;
-}
-.yellowLineAnimBox:hover{
-  cursor: pointer;
-}
-.yellowLineDown{
-  width: 2px;
-  background: #f1df34;
-  height: 8vw;
-  animation-name: yellowLineDown;
-  animation-duration: 1.3s;
-  /* animation-direction: alternate; */
-  animation-iteration-count: infinite;
+  position: relative;
+  top: -1vw;
 }
 
-@keyframes yellowLineDown {
-  0%{
-    height: 1vw;
-  }
-  100%{
-    height: 8vw;
-  }
+.supMainText{
+  font-family: 'Montserrat-Regular';
+  font-size: 1.45vw;
+  border: 1px solid yellow;
+  position: absolute;
+  margin: 0;
+  top: 19.9vw;
+  right: 9.3vw;
+}
+.feedBackSingle{
+  border: 1px solid black;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 6.523vw;
 }
 
-.discoverySection{
+.imgNameFeedback{
   display: flex;
-  height: 100vh;
-}
-.discoveryConsulting{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-  height: 100%;
-  width: 50%;
-  background-color: black;
+  border: 1px solid black;
+  font-family: 'Montserrat-Bold';
 }
-.discoveryConsulting p{
-  color: white;
-  font-size: 5.729vw;
+.imgNameFeedback img{
+  margin-right: 0.8154vw;
+  width: 4.077vw;
+  height: 3.9288vw;
+}
+.imgNameFeedback p{
+  font-size: 1vw;
   margin: 0;
 }
-.discoveryConsulting p:nth-child(2){
-  font-family: 'Montserrat-ExtraLight';
-  margin-top: 5vw;
-  margin-bottom: -2vw;
+.imgNameFeedback a{
+  text-decoration: none;
 }
-.discoveryConsulting p:nth-child(3){
+
+.feedBackText{
+  text-align: justify;
+}
+.feedBackText p{
+  margin-left: 4.8924vw;
+  font-size: 1.05vw;
+  font-family: 'Montserrat-Light';
+  line-height: 1.2;
+  font-weight: 800;
+}
+/* supportAndMaintance end */
+/* technologies */
+.technologies{
+  position: relative;
+  height: 50.7vw;
+  background: rgb(200,200,200);
+}
+/* technologies end */
+/* ourWorkFlow */
+.ourWorkFlow{
+  position: relative;
+}
+.ourWorkFlow h2{
+  margin: 0;
+  font-size: 5.3vw;
+  font-family: 'Montserrat-Hairline';
+  color: rgb(49,49,50);
+  margin-bottom: 1vw;
+  margin-left: 6.22vw;
+}
+.ourWorkFlow h2 span{
   font-family: 'Montserrat-Black';
 }
-.yellowLineAnimBoxTwo{
-  height: 17vw;
-  width: 1vw;
-  padding-left: 1vw;
+.workFlowVidDiv{
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+  width: 79.83vw;
+  height: 52.63vw;
 }
-.projectKickOff{
+.workFlowVidDiv::after{
+  content: "";
+  position: absolute;
+  width: 100%;
   height: 100%;
-  width: 50%;
-  background-color: #e43344;
+  top: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.8;
+}
+.ourWorkFlow video{
+  position: absolute;
+  object-fit:initial;
+  width: 100%;
+  height: 42.03vw;
+  bottom: 0.889vw;
+}
+
+.countOnUs{
+  position: absolute;
+  top: 18.16vw;
+  background-color: rgb(234,199,7);
+  width: 51.89vw;
+  height: 49.96vw;
 }
 
 
+/* ourWorkFlow end*/
+
+/* other pages css starts here */
 .content{
   padding-top: 0.1px;
   /* border: 1px solid black; */
