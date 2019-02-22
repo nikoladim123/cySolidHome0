@@ -787,7 +787,6 @@ main{
   font-family: 'Montserrat-Black';
 }
 .workFlowVidDiv{
-  border: 1px solid red;
   position: absolute;
   right: 0;
   width: 79.83vw;
