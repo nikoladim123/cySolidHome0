@@ -1,18 +1,18 @@
-// window.onscroll = function(){
-//   // console.log(appMenu.getBoundingClientRect().top);
-//   // appMenuSticky();
-//   if(scrollY >100){
-//     // imageReveal();
-//     // textReveal();
-//     // optimizationSectionReveal();
-//   }
-// }
-
 window.onscroll = function(){
 	mobVidCall();
 	mobParrotCall();
+	webDevelopmentReveal();
 }
 
+// webDevelopment text anim;
+// webDevelopment text anim;
+// webDevelopment text anim;
+var webDevelopment = document.getElementsByClassName('webDevelopment')[0];
+function webDevelopmentReveal(){
+	if(webDevelopment.getBoundingClientRect().y < window.innerHeight/100 *90){
+		webDevelopment.style.left = '8vw'
+	}
+}
 
 window.onload = function(){
   // revealOnLoad();
@@ -24,22 +24,34 @@ window.onload = function(){
 var animQuot = document.getElementsByClassName('animQuot');
 var quot = 0;
 setInterval(function () {
-	if(quot%2 === 0 ){
+	if(quot%3 === 0 ){
 		animQuot[0].style.opacity = '0';
+		animQuot[2].style.opacity = '0';
 		setTimeout(function(){
 			// animQuot[0].style.display = 'none';
 			animQuot[1].style.display = 'block';
 			animQuot[1].style.opacity = '1';
 		},1000)
 	}
-	if(quot%2 === 1 ){
+	if(quot%3 === 2 ){
 		animQuot[1].style.opacity = '0';
+		animQuot[2].style.opacity = '0';
 		setTimeout(function(){
 			// animQuot[1].style.display = 'none';
 			animQuot[0].style.display = 'block';
 			animQuot[0].style.opacity = '1';
 		},1000)
 	}
+	if(quot%3 === 1 ){
+		animQuot[0].style.opacity = '0';
+		animQuot[1].style.opacity = '0';
+		setTimeout(function(){
+			// animQuot[1].style.display = 'none';
+			animQuot[2].style.display = 'block';
+			animQuot[2].style.opacity = '1';
+		},1000)
+	}
+	console.log(quot%3);
 	quot++;
 }, 5000);
 
@@ -49,13 +61,13 @@ setInterval(function () {
 var mobileVid = document.getElementsByClassName("mobileVid")[0];
 function mobVidCall(){
 	if (parseInt(window.getComputedStyle(mobileVid).bottom) > -(window.innerWidth/100 *36) ) {
-    mobileVid.style.bottom = parseInt(window.getComputedStyle(mobileVid).bottom) - window.scrollY/140 + 'px';
+    mobileVid.style.bottom = parseInt(window.getComputedStyle(mobileVid).bottom) - window.scrollY/130 + 'px';
   }
 }
 var mobileParrot = document.getElementsByClassName("mobileParrot")[0];
 function	mobParrotCall(){
 	if (parseInt(window.getComputedStyle(mobileParrot).bottom) > -(window.innerWidth/100 *18) ) {
-    mobileParrot.style.bottom = parseInt(window.getComputedStyle(mobileParrot).bottom) - window.scrollY/200 + 'px';
+    mobileParrot.style.bottom = parseInt(window.getComputedStyle(mobileParrot).bottom) - window.scrollY/150 + 'px';
   }
 }
 // video slider anim
