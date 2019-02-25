@@ -684,10 +684,10 @@ main{
   color: white;
   /* border: 1px solid red; */
   position: absolute;
-  width:80%;
+  width:90%;
   height: 90%;
   top: 5%;
-  left: 10%;
+  left: 5%;
   opacity: 0;
 }
 .blackLayerInside h2{
@@ -698,8 +698,8 @@ main{
 }
 .blackLayerInside p{
   /* border: 1px solid yellow; */
-  width: 34vw;
-  font-size: 1.635vw;
+  width: 37vw;
+  font-size: 1.535vw;
   font-family: 'Montserrat-Regular';
   text-align: justify;
 }

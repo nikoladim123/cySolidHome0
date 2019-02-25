@@ -445,8 +445,8 @@ var gridImgBox = document.getElementsByClassName('gridImgBox');
 var gridParaFont = document.getElementsByClassName('gridParaFont');
 var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
   gridImgBox[0].addEventListener('mouseenter',function(){
-      gridImgBox[0].style.width = '92%';
-      gridImgBox[0].style.height = '92%';
+      gridImgBox[0].style.width = '95%';
+      gridImgBox[0].style.height = '95%';
       gridImgBox[0].style.marginTop = '2.5%';
       gridImgBox[0].style.marginLeft = '2.5%';
 			blackTestlayerFun();
@@ -462,10 +462,10 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
 
 
     gridImgBox[1].addEventListener('mouseenter',function(){
-        gridImgBox[1].style.width = '95%';
-        gridImgBox[1].style.height = '95%';
-        gridImgBox[1].style.marginTop = '2.5%';
-        gridImgBox[1].style.marginLeft = '2.5%';
+        gridImgBox[1].style.width = '96%';
+        gridImgBox[1].style.height = '96%';
+        gridImgBox[1].style.marginTop = '3%';
+        gridImgBox[1].style.marginLeft = '3%';
       });
 
     gridImgBox[1].addEventListener('mouseleave',function(){
