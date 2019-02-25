@@ -449,6 +449,7 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
       gridImgBox[0].style.height = '95%';
       gridImgBox[0].style.marginTop = '2.5%';
       gridImgBox[0].style.marginLeft = '2.5%';
+			blackTestlayerFun();
     });
 
   gridImgBox[0].addEventListener('mouseleave',function(){
@@ -456,6 +457,7 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
       gridImgBox[0].style.height = '100%';
       gridImgBox[0].style.marginTop = '0%';
       gridImgBox[0].style.marginLeft = '0%';
+			blackTestlayerMouseOfFun();
     });
 
 
@@ -502,12 +504,43 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
             gridImgBox[3].style.marginTop = '0%';
             gridImgBox[3].style.marginLeft = '0%';
           });
+// black layer text anim hover
+var blackTextLayer = document.getElementsByClassName('blackTextLayer');
+var blackLayerInside = document.getElementsByClassName('blackLayerInside');
+function blackTestlayerFun(){
+	blackTextLayer[0].style.width = '92%';
+	blackTextLayer[0].style.height = '92%';
+	blackTextLayer[0].style.left = '4%';
+	blackTextLayer[0].style.top = '4%';
+	blackTextLayer[0].style.backgroundColor = 'rgb(0,0,0,0.8)';
+	blackLayerInside[0].style.opacity = '1';
+}
+function blackTestlayerMouseOfFun(){
+	blackTextLayer[0].style.width = '100%';
+	blackTextLayer[0].style.height = '100%';
+	blackTextLayer[0].style.left = '0%';
+	blackTextLayer[0].style.top = '0%';
+	blackTextLayer[0].style.backgroundColor = 'rgb(0,0,0,0)';
+	blackLayerInside[0].style.opacity = '0';
+}
+// read more line anim
+// read more line anim
+// read more line anim
+var readMoreDiv = document.getElementsByClassName('readMoreDiv');
+var readMoreAnimDiv = document.getElementsByClassName('readMoreAnimDiv');
+readMoreDiv[0].addEventListener('mouseenter',function(){
+	readMoreAnimDiv[0].style.width = '100%';
+})
+readMoreDiv[0].addEventListener('mouseleave',function(){
+	readMoreAnimDiv[0].style.width = '40%';
+})
 //purple screen anim
 //purple screen anim
 //purple screen anim
 var purpScreenDiv = document.getElementsByClassName('purpScreenDiv')[0];
 var purpTabletDiv = document.getElementsByClassName('purpTabletDiv')[0];
 var purpleScreen = document.getElementsByClassName('purpScreen')[0];
+
 function purpleScreens(){
 	if (purpleScreen.getClientRects()[0].top < window.innerHeight / 100 * 30) {
 		purpScreenDiv.style.transform = "matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1)"

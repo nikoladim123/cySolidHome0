@@ -633,7 +633,7 @@ main{
 .gridImgBox:hover{
   cursor: pointer;
 }
-.gridImgBox::before{
+/* .gridImgBox::before{
   z-index: 1;
   transition: 1s;
   content: '';
@@ -646,6 +646,61 @@ main{
 }
 .gridImgBox:hover:before{
   background-color: rgb(0,0,0,0);
+} */
+.blackTextLayer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0,0);
+  transition: 1s;
+}
+.blackLayerInside{
+  transition: 1s;
+  color: white;
+  /* border: 1px solid red; */
+  position: absolute;
+  width:90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  opacity: 0;
+}
+.blackLayerInside h2{
+  font-size: 4.392vw;
+  font-family: 'Montserrat-Black';
+}
+.blackLayerInside p{
+  /* border: 1px solid yellow; */
+  width: 37vw;
+  font-size: 1.635vw;
+  font-family: 'Montserrat-Regular';
+  text-align: justify;
+}
+.readMoreDiv{
+  font-family: 'Montserrat-Bold';
+  font-size: 1.635vw;
+  /* border: 1px solid white; */
+  position: absolute;
+  bottom: 4vw;
+  right: 6vw;
+}
+.readMoreDiv h3{
+  margin: 0;
+  margin-top: 0.5vw;
+}
+.readMoreAnimDiv{
+  transition: 0.4s;
+  position: absolute;
+  background: rgb(106,110,248);
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 0.27vw;
+}
+.readMoreAnimDiv:hover{
+  width: 100%;
 }
 
 .gridImgBox::after{
