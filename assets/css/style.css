@@ -661,19 +661,21 @@ main{
   color: white;
   /* border: 1px solid red; */
   position: absolute;
-  width:90%;
+  width:80%;
   height: 90%;
   top: 5%;
-  left: 5%;
+  left: 10%;
   opacity: 0;
 }
 .blackLayerInside h2{
+  margin-top: 0vw;
+  margin-bottom: 1vh;
   font-size: 4.392vw;
   font-family: 'Montserrat-Black';
 }
 .blackLayerInside p{
   /* border: 1px solid yellow; */
-  width: 37vw;
+  width: 34vw;
   font-size: 1.635vw;
   font-family: 'Montserrat-Regular';
   text-align: justify;
@@ -683,7 +685,7 @@ main{
   font-size: 1.635vw;
   /* border: 1px solid white; */
   position: absolute;
-  bottom: 4vw;
+  bottom: 4vh;
   right: 6vw;
 }
 .readMoreDiv h3{
