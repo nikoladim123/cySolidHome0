@@ -2,6 +2,7 @@ window.onscroll = function(){
 	mobVidCall();
 	mobParrotCall();
 	webDevelopmentReveal();
+	purpleScreens();
 }
 
 // webDevelopment text anim;
@@ -51,7 +52,6 @@ setInterval(function () {
 			animQuot[2].style.opacity = '1';
 		},1000)
 	}
-	console.log(quot%3);
 	quot++;
 }, 5000);
 
@@ -479,3 +479,15 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
             gridImgBox[3].style.marginTop = '0%';
             gridImgBox[3].style.marginLeft = '0%';
           });
+//purple screen anim
+//purple screen anim
+//purple screen anim
+var purpScreenDiv = document.getElementsByClassName('purpScreenDiv')[0];
+var purpTabletDiv = document.getElementsByClassName('purpTabletDiv')[0];
+var purpleScreen = document.getElementsByClassName('purpScreen')[0];
+function purpleScreens(){
+	if (purpleScreen.getClientRects()[0].top < window.innerHeight / 100 * 30) {
+		purpScreenDiv.style.transform = "matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1)"
+		purpTabletDiv.style.transform = "matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1)"
+	}
+}

@@ -706,6 +706,82 @@ main{
   background-position: center;
   background-size: 100% 250%;
 }
+
+.purpScreenDiv{
+  position: relative;
+  transition: 1s;
+  transform-origin: 30vw center 0px;
+  transform: matrix3d(0.87,0,0.50,0.0001,0.00,1,0.00,0,-0.5,0,0.87,0,0,0,0,1);
+}
+.purpScreen{
+  transition: 1s;
+  position: absolute;
+  width: 37.353vw;
+  height: 39.5vw;
+  top: 1.6vw;
+  left: 5vw;
+}
+.purpScreen:hover{
+  filter: brightness(115%);
+}
+.purpleScreenGear{
+  position: absolute;
+  background-image: url("../img/png/purpTabletGear.png");
+  width: 16vw;
+  left: 18vw;
+  height: 16vw;
+  background-size: 100% 100%;
+  top: 4vw;
+  animation-name: purpleTabletGear;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.purpleScreenGearRotate{
+transform: matrix3d(0.87,0,0.50,0.0001,0.00,1,0.00,0,-0.5,0,0.87,0,0,0,0,1);
+}
+
+.purpTabletDiv{
+  position: relative;
+  transform-origin: 20vw 0vw 0px;
+  transform: matrix3d(0.87,0,0.50,-0.0001,0.00,1,0.00,0,-0.5,0,0.87,0,0,0,0,1);
+  transition: 1s;
+}
+.purpTabletDiv:hover{
+  filter: brightness(115%);
+  transform: matrix3d(0.87,0,0.50,-0.0001,0.00,1,0.00,0,-0.5,0,0.87,0,0,0,0,1);
+}
+.purpTablet{
+  position: absolute;
+  width: 22.998vw;
+  height: 34.86vw;
+  top: 10.37vw;
+  left: 2.6vw;
+}
+.purpleTabletGear{
+  position: absolute;
+  top: 17vw;
+  left:6vw;
+  background-image: url("../img/png/purpTabletGear.png");
+  width: 16vw;
+  height: 16vw;
+  background-size: 100% 100%;
+  /* transition: 1s; */
+  animation-name: purpleTabletGear;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes purpleTabletGear {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
 .supMain{
   position: absolute;
   right: 9.7vw;
