@@ -25,31 +25,54 @@ window.onload = function(){
 var animQuot = document.getElementsByClassName('animQuot');
 var quot = 0;
 setInterval(function () {
-	if(quot%3 === 0 ){
+	if(quot%5 === 0 ){
 		animQuot[0].style.opacity = '0';
 		animQuot[2].style.opacity = '0';
+		animQuot[3].style.opacity = '0';
+		animQuot[4].style.opacity = '0';
 		setTimeout(function(){
-			// animQuot[0].style.display = 'none';
 			animQuot[1].style.display = 'block';
 			animQuot[1].style.opacity = '1';
 		},1000)
 	}
-	if(quot%3 === 2 ){
+	if(quot%5 === 2 ){
 		animQuot[1].style.opacity = '0';
 		animQuot[2].style.opacity = '0';
+		animQuot[3].style.opacity = '0';
+		animQuot[4].style.opacity = '0';
 		setTimeout(function(){
-			// animQuot[1].style.display = 'none';
 			animQuot[0].style.display = 'block';
 			animQuot[0].style.opacity = '1';
 		},1000)
 	}
-	if(quot%3 === 1 ){
+	if(quot%5 === 1 ){
 		animQuot[0].style.opacity = '0';
 		animQuot[1].style.opacity = '0';
+		animQuot[3].style.opacity = '0';
+		animQuot[4].style.opacity = '0';
 		setTimeout(function(){
-			// animQuot[1].style.display = 'none';
 			animQuot[2].style.display = 'block';
 			animQuot[2].style.opacity = '1';
+		},1000)
+	}
+	if(quot%5 === 3 ){
+		animQuot[0].style.opacity = '0';
+		animQuot[1].style.opacity = '0';
+		animQuot[2].style.opacity = '0';
+		animQuot[4].style.opacity = '0';
+		setTimeout(function(){
+			animQuot[3].style.display = 'block';
+			animQuot[3].style.opacity = '1';
+		},1000)
+	}
+	if(quot%5 === 4 ){
+		animQuot[0].style.opacity = '0';
+		animQuot[1].style.opacity = '0';
+		animQuot[2].style.opacity = '0';
+		animQuot[3].style.opacity = '0';
+		setTimeout(function(){
+			animQuot[4].style.display = 'block';
+			animQuot[4].style.opacity = '1';
 		},1000)
 	}
 	quot++;
