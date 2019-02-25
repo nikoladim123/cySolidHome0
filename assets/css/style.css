@@ -264,11 +264,48 @@ header{
   transition: 2s;
   background-color: rgb(255,175,7);
   position: absolute;
-  width: 56vw;
-  height: 36.6vw;
-  right: -56vw;
+  margin-right: 1.8vw;
+  width: 0vw;
+  top: 1.85vw;
+  height: 33.1vw;
+  right: 0vw;
 }
-
+.arrowHolder{
+  position: absolute;
+  overflow: hidden;
+  width: 5vw;
+  height: 4vw;
+  top: 13.165vw;
+  left: -5vw;
+}
+.arrow{
+  transition: 0.4s;
+  transform: rotate(45deg);
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  background-color: #ffae45;
+  right: -1vw;
+  top: 1vw;
+  /* margin-top: 15.165vw; */
+  /* left: -1vw; */
+}
+.arrow:hover{
+  filter: brightness(120%);
+  cursor: pointer;
+}
+.FREE{
+  position: absolute;
+  right: 1.8vw;
+  top: 10.7vw;
+}
+.FREE p{
+  color: #ffae45;
+  font-family: 'Montserrat-Black',serif;
+  margin: 0;
+  font-size: 1.779vw;
+  writing-mode: tb-rl;
+}
 .mobileParrot{
   width: 32.29vw;
   height: 57.85vw;
@@ -299,20 +336,6 @@ header{
   width: 100%;
 }
 
-.arrow{
-  transition: 0.4s;
-  transform: rotate(45deg);
-  position: relative;
-  width: 2vw;
-  height: 2vw;
-  background-color: rgb(255,175,7);
-  margin-top: 15.165vw;
-  left: -1vw;
-}
-.arrow:hover{
-  filter: brightness(120%);
-  cursor: pointer;
-}
 
 .logo{
   position: absolute;
@@ -631,7 +654,7 @@ main{
 }
 
 .gridImgBox:hover{
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 /* .gridImgBox::before{
   z-index: 1;
@@ -688,6 +711,9 @@ main{
   bottom: 4vh;
   right: 6vw;
 }
+.readMoreDiv:hover{
+  cursor: pointer;
+}
 .readMoreDiv h3{
   margin: 0;
   margin-top: 0.5vw;
@@ -726,7 +752,7 @@ main{
   /* border: 1px solid black; */
   position: absolute;
   bottom: 5vw;
-  left: 2vw;
+  left: 2.15vw;
 }
 
 .gridParaBox p:nth-child(1){

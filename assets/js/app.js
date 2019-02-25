@@ -98,13 +98,13 @@ function	mobParrotCall(){
 // video slider anim
 var arrow = document.getElementsByClassName('arrow')[0];
 var videoSlider = document.getElementsByClassName('videoSlider')[0];
-var vidModulo =0;
+var vidModulo =1;
 arrow.addEventListener('click',function(){
   if(vidModulo % 2 === 0){
-    videoSlider.style.right = '0';
+    videoSlider.style.width = '0';
   }
   if(vidModulo % 2 === 1){
-    videoSlider.style.right = '-56vw';
+    videoSlider.style.width = '56vw';
   }
   vidModulo++;
 });
@@ -445,8 +445,8 @@ var gridImgBox = document.getElementsByClassName('gridImgBox');
 var gridParaFont = document.getElementsByClassName('gridParaFont');
 var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
   gridImgBox[0].addEventListener('mouseenter',function(){
-      gridImgBox[0].style.width = '95%';
-      gridImgBox[0].style.height = '95%';
+      gridImgBox[0].style.width = '92%';
+      gridImgBox[0].style.height = '92%';
       gridImgBox[0].style.marginTop = '2.5%';
       gridImgBox[0].style.marginLeft = '2.5%';
 			blackTestlayerFun();
@@ -508,10 +508,10 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
 var blackTextLayer = document.getElementsByClassName('blackTextLayer');
 var blackLayerInside = document.getElementsByClassName('blackLayerInside');
 function blackTestlayerFun(){
-	blackTextLayer[0].style.width = '92%';
-	blackTextLayer[0].style.height = '92%';
-	blackTextLayer[0].style.left = '4%';
-	blackTextLayer[0].style.top = '4%';
+	blackTextLayer[0].style.width = '90%';
+	blackTextLayer[0].style.height = '90%';
+	blackTextLayer[0].style.left = '5%';
+	blackTextLayer[0].style.top = '5%';
 	blackTextLayer[0].style.backgroundColor = 'rgb(0,0,0,0.8)';
 	blackLayerInside[0].style.opacity = '1';
 }
