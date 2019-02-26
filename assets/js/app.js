@@ -619,7 +619,7 @@ var contactUsMaintenance = document.getElementsByClassName('contactUsMaintenance
 var maintenanceLineAnim = document.getElementsByClassName('maintenanceLineAnim')[0];
 var svgArrow = document.getElementsByClassName('svgArrow')[0];
 contactUsMaintenance.addEventListener('mouseenter',function(){
-	maintenanceLineAnim.style.width = '100%';
+	maintenanceLineAnim.style.width = '90%';
 	svgArrow.style.filter = 'brightness(120%)';
 });
 contactUsMaintenance.addEventListener('mouseleave',function(){
@@ -638,6 +638,7 @@ technologiesReadMoreDiv.addEventListener('mouseenter',function(){
 technologiesReadMoreDiv.addEventListener('mouseleave',function(){
 	technoLineAnim.style.width = '40%';
 });
+
 //purple screen anim
 //purple screen anim
 //purple screen anim
