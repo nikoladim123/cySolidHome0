@@ -466,6 +466,7 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
         gridImgBox[1].style.height = '96%';
         gridImgBox[1].style.marginTop = '3%';
         gridImgBox[1].style.marginLeft = '3%';
+				blackTestlayerFunTwo();
       });
 
     gridImgBox[1].addEventListener('mouseleave',function(){
@@ -473,6 +474,7 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
         gridImgBox[1].style.height = '100%';
         gridImgBox[1].style.marginTop = '0%';
         gridImgBox[1].style.marginLeft = '0%';
+				blackTestlayerMouseOfFunTwo();
       });
 
 
@@ -481,6 +483,7 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
           gridImgBox[2].style.height = '95%';
           gridImgBox[2].style.marginTop = '2.5%';
           gridImgBox[2].style.marginLeft = '2.5%';
+					blackTestlayerFunthree();
         });
 
       gridImgBox[2].addEventListener('mouseleave',function(){
@@ -488,6 +491,7 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
           gridImgBox[2].style.height = '100%';
           gridImgBox[2].style.marginTop = '0%';
           gridImgBox[2].style.marginLeft = '0%';
+					blackTestlayerMouseOfFunThree();
         });
 
 
@@ -496,6 +500,7 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
             gridImgBox[3].style.height = '95%';
             gridImgBox[3].style.marginTop = '2.5%';
             gridImgBox[3].style.marginLeft = '2.5%';
+						blackTestlayerFunFour();
           });
 
         gridImgBox[3].addEventListener('mouseleave',function(){
@@ -503,6 +508,7 @@ var gridParaFontOne = document.getElementsByClassName('gridParaFontOne');
             gridImgBox[3].style.height = '100%';
             gridImgBox[3].style.marginTop = '0%';
             gridImgBox[3].style.marginLeft = '0%';
+						blackTestlayerMouseOfFunFour();
           });
 // black layer text anim hover
 var blackTextLayer = document.getElementsByClassName('blackTextLayer');
@@ -523,6 +529,57 @@ function blackTestlayerMouseOfFun(){
 	blackTextLayer[0].style.backgroundColor = 'rgb(0,0,0,0)';
 	blackLayerInside[0].style.opacity = '0';
 }
+
+function blackTestlayerFunTwo(){
+	blackTextLayer[1].style.width = '90%';
+	blackTextLayer[1].style.height = '90%';
+	blackTextLayer[1].style.left = '5%';
+	blackTextLayer[1].style.top = '5%';
+	blackTextLayer[1].style.backgroundColor = 'rgb(0,0,0,0.8)';
+	blackLayerInside[1].style.opacity = '1';
+}
+function blackTestlayerMouseOfFunTwo(){
+	blackTextLayer[1].style.width = '100%';
+	blackTextLayer[1].style.height = '100%';
+	blackTextLayer[1].style.left = '0%';
+	blackTextLayer[1].style.top = '0%';
+	blackTextLayer[1].style.backgroundColor = 'rgb(0,0,0,0)';
+	blackLayerInside[1].style.opacity = '0';
+}
+
+function blackTestlayerFunthree(){
+	blackTextLayer[2].style.width = '90%';
+	blackTextLayer[2].style.height = '90%';
+	blackTextLayer[2].style.left = '5%';
+	blackTextLayer[2].style.top = '5%';
+	blackTextLayer[2].style.backgroundColor = 'rgb(0,0,0,0.8)';
+	blackLayerInside[2].style.opacity = '1';
+}
+function blackTestlayerMouseOfFunThree(){
+	blackTextLayer[2].style.width = '100%';
+	blackTextLayer[2].style.height = '100%';
+	blackTextLayer[2].style.left = '0%';
+	blackTextLayer[2].style.top = '0%';
+	blackTextLayer[2].style.backgroundColor = 'rgb(0,0,0,0)';
+	blackLayerInside[2].style.opacity = '0';
+}
+
+function blackTestlayerFunFour(){
+	blackTextLayer[3].style.width = '90%';
+	blackTextLayer[3].style.height = '90%';
+	blackTextLayer[3].style.left = '5%';
+	blackTextLayer[3].style.top = '5%';
+	blackTextLayer[3].style.backgroundColor = 'rgb(0,0,0,0.8)';
+	blackLayerInside[3].style.opacity = '1';
+}
+function blackTestlayerMouseOfFunFour(){
+	blackTextLayer[3].style.width = '100%';
+	blackTextLayer[3].style.height = '100%';
+	blackTextLayer[3].style.left = '0%';
+	blackTextLayer[3].style.top = '0%';
+	blackTextLayer[3].style.backgroundColor = 'rgb(0,0,0,0)';
+	blackLayerInside[3].style.opacity = '0';
+}
 // read more line anim
 // read more line anim
 // read more line anim
@@ -534,6 +591,53 @@ readMoreDiv[0].addEventListener('mouseenter',function(){
 readMoreDiv[0].addEventListener('mouseleave',function(){
 	readMoreAnimDiv[0].style.width = '40%';
 })
+
+readMoreDiv[1].addEventListener('mouseenter',function(){
+	readMoreAnimDiv[1].style.width = '100%';
+})
+readMoreDiv[1].addEventListener('mouseleave',function(){
+	readMoreAnimDiv[1].style.width = '40%';
+})
+
+readMoreDiv[2].addEventListener('mouseenter',function(){
+	readMoreAnimDiv[2].style.width = '100%';
+})
+readMoreDiv[2].addEventListener('mouseleave',function(){
+	readMoreAnimDiv[2].style.width = '40%';
+})
+
+readMoreDiv[3].addEventListener('mouseenter',function(){
+	readMoreAnimDiv[3].style.width = '100%';
+})
+readMoreDiv[3].addEventListener('mouseleave',function(){
+	readMoreAnimDiv[3].style.width = '40%';
+})
+// contact us line anim
+// contact us line anim
+// contact us line anim
+var contactUsMaintenance = document.getElementsByClassName('contactUsMaintenance')[0];
+var maintenanceLineAnim = document.getElementsByClassName('maintenanceLineAnim')[0];
+var svgArrow = document.getElementsByClassName('svgArrow')[0];
+contactUsMaintenance.addEventListener('mouseenter',function(){
+	maintenanceLineAnim.style.width = '100%';
+	svgArrow.style.filter = 'brightness(120%)';
+});
+contactUsMaintenance.addEventListener('mouseleave',function(){
+	maintenanceLineAnim.style.width = '40%';
+	svgArrow.style.filter = 'brightness(100%)';
+});
+
+// technologies Line Anim
+// technologies Line Anim
+// technologies Line Anim
+var technologiesReadMoreDiv = document.getElementsByClassName('technologiesReadMoreDiv')[0];
+var technoLineAnim = document.getElementsByClassName('technoLineAnim')[0];
+technologiesReadMoreDiv.addEventListener('mouseenter',function(){
+	technoLineAnim.style.width = '100%';
+});
+technologiesReadMoreDiv.addEventListener('mouseleave',function(){
+	technoLineAnim.style.width = '40%';
+});
 //purple screen anim
 //purple screen anim
 //purple screen anim
