@@ -3,6 +3,7 @@ window.onscroll = function(){
 	mobParrotCall();
 	webDevelopmentReveal();
 	purpleScreens();
+	stickyMenuFunc();
 }
 
 // webDevelopment text anim;
@@ -17,6 +18,24 @@ function webDevelopmentReveal(){
 
 window.onload = function(){
   // revealOnLoad();
+}
+
+// stickymenu logic
+// stickymenu logic
+// stickymenu logic
+var stickyMenu = document.getElementsByClassName('stickyMenu')[0];
+function stickyMenuFunc(){
+  if(this.oldScroll > this.scrollY && window.scrollY > 1 ){
+    if(window.innerWidth > window.innerHeight){
+        stickyMenu.style.height = '5.2vw';
+    }else{
+      stickyMenu.style.height = '17vw';
+    }
+  }
+  else {
+    stickyMenu.style.height = '0vw';
+  }
+  this.oldScroll = this.scrollY;
 }
 
 // videoText anim Chnage text on time interval
@@ -136,18 +155,18 @@ burgerMenu.addEventListener('mouseleave',()=>{
 // .appMenu STICKY ON / OFF
 // .appMenu STICKY ON / OFF
 // .appMenu STICKY ON / OFF
-var appMenu = document.getElementsByClassName('appMenu')[0];
-var content = document.getElementsByClassName('content')[0];
-function appMenuSticky(){
-  if(content.getBoundingClientRect().top <= 0){
-    console.log('zxczxc');
-    appMenu.style.position = 'fixed';
-  }
-  if(content.getBoundingClientRect().top > 1){
-    appMenu.style.position = 'absolute';
-    console.log('im absolute');
-  }
-}
+// var appMenu = document.getElementsByClassName('appMenu')[0];
+// var content = document.getElementsByClassName('content')[0];
+// function appMenuSticky(){
+//   if(content.getBoundingClientRect().top <= 0){
+//     console.log('zxczxc');
+//     appMenu.style.position = 'fixed';
+//   }
+//   if(content.getBoundingClientRect().top > 1){
+//     appMenu.style.position = 'absolute';
+//     console.log('im absolute');
+//   }
+// }
 
 //Dev Anim
 // var devIcon = document.getElementsByClassName('devIcon')[0];
@@ -371,17 +390,17 @@ function optimizationSectionReveal(){
 // searchLayer anim
 // searchLayer anim
 // searchLayer anim
-var searchIcon = document.getElementsByClassName('searchIcon')[0];
+// var searchIcon = document.getElementsByClassName('searchIcon')[0];
 var SearchDivLayer = document.getElementsByClassName('SearchDivLayer')[0];
 var exitButton = document.getElementsByClassName('exitButton')[0];
 
-searchIcon.addEventListener('click',function(){
-  SearchDivLayer.className += ' SearchDivLayerAnimOpen';
-  setTimeout(function(){
-     SearchDivLayer.style.width = '100%';
-     SearchDivLayer.className = ' SearchDivLayer';
-   }, 1000);
-})
+// searchIcon.addEventListener('click',function(){
+//   SearchDivLayer.className += ' SearchDivLayerAnimOpen';
+//   setTimeout(function(){
+//      SearchDivLayer.style.width = '100%';
+//      SearchDivLayer.className = ' SearchDivLayer';
+//    }, 1000);
+// })
 
 exitButton.addEventListener('click',function(){
   SearchDivLayer.className += ' SearchDivLayerAnimClose';

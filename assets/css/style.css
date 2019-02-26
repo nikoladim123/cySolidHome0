@@ -134,6 +134,24 @@ button:hover{
   cursor: pointer;
 }
 
+/* sticky menu */
+.stickyMenu {
+    transition: 0.5s;
+    z-index: 2;
+    position: fixed;
+    height: 0vw;
+    width: 100vw;
+    background-color: black;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.linksSticky{
+  margin-right: 1vw;
+}
+/* sticky menu end */
+
 /* search layer */
 
 header{
