@@ -141,7 +141,7 @@ header{
   background-size: 100% 100%;
   position: relative;
   min-height: 97.77vw;
-  background: linear-gradient(135deg, #dab845 0%, #e3d366 100%);
+  background: linear-gradient(135deg, rgb(212,185,102) 0%, rgb(233,218,158) 100%);
 }
 
 .videoDiv{
@@ -227,18 +227,22 @@ header{
   color: white;
 }
 .getInTouchBtn{
-  font-family: 'Montserrat-Light';
+  transition: 0.4s;
+  font-family: 'Montserrat-Regular';
   position: absolute;
-  background-color: rgb(219,29,76,0.5);
+  background-color: rgba(255,174,69,0.45);
   color: white;
-  border: 3px solid white;
+  border: 3px solid rgba(255,255,255,0.38);
   width: 12.89vw;
   height: 2.965vw;
   border-radius: 2vw;
-  font-size: 1.317vw;
+  font-size: 1.186vw;
   margin-left: 50%;
   left: -6.445vw;
   bottom: 2.2vw;
+}
+.getInTouchBtn:hover{
+  background-color: rgba(255,174,69,0.6);
 }
 .bannerAnimArrow{
   position: absolute;
@@ -699,8 +703,8 @@ main{
   opacity: 0;
 }
 .blackLayerInside h2{
-  margin-top: 0vw;
-  margin-bottom: 1vh;
+  margin-top: 3vw;
+  margin-bottom: 7vh;
   font-size: 3.2616vw;
   font-family: 'Montserrat-Black';
 }
