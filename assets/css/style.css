@@ -159,7 +159,8 @@ header{
   background-size: 100% 100%;
   position: relative;
   min-height: 97.77vw;
-  background: linear-gradient(135deg, #e6db29 0%, #e0db66 100%);
+  /* background: linear-gradient(135deg, #e6db29 0%, #e0db66 100%); */
+    background: linear-gradient(135deg, #e6b929 0%, #e0c366 100%);
 }
 .topBandLayer{
   position: absolute;
@@ -272,7 +273,8 @@ header{
   position: absolute;
   background-color: rgba(255,160,49,1);
   color: white;
-  border: 3px solid white;
+  /* border: 3px solid white; */
+  border:none;
   width: 12.89vw;
   height: 2.965vw;
   border-radius: 2vw;
